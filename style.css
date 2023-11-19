@@ -1,0 +1,140 @@
+@font-face{
+    font-family: lighsiderital;
+    src: url(fonts/lightsiderital.ttf);
+}
+
+*{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: rgb(60, 60, 60);
+}
+ body{
+    background-color: rgb(0, 0, 0);
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+#logo{
+    width: 100px;
+    height: auto;
+    /* margin-bottom: px; */
+}
+.navbar-brand{
+    color: rgb(181, 0, 0);
+    font-size: 2rem;
+    font-family: lighsiderital;
+}
+.navbar-brand:hover{
+    color: rgb(110, 110, 110);
+}
+.navbar-nav a{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform:uppercase;
+}
+.navbar-nav a::after{
+    color: rgb(181, 0, 0);
+}
+
+
+.navbar-nav a:hover{
+    color: rgb(191, 191, 191);
+}
+.main{
+    background: url(./img/jumbotron.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 50%;
+    width: 100%;
+}
+
+.main h1{
+    font-family: 'poppins', sans-serif;
+    font-size: 6rem;
+    color: rgb(193, 193, 193);
+    overflow-y: hidden;
+}
+.main .main_btn{
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-family: 'Monsterrat', sans-serif;
+    background-color: rgba(0, 0, 0, 0.46);
+    height: 35px;
+    width: 50%;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+.main .main_btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.img-about{
+    margin-left: -200px;
+    border: none;
+    border-radius: 50px;
+}
+.container-about{
+    background-color: black;
+}
+.container-about p{
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins';
+    text-align: justify;
+    margin-right: 100px;
+}
+#about-span{
+    font-family: lighsiderital;
+}
+
+.carousel {
+    max-width: 600px; /* Atur lebar maksimum sesuai kebutuhan Anda */
+    margin: auto; /* Pusatkan carousel di tengah */
+}
+
+.carousel img {
+    max-width: 100%; /* Agar gambar tidak melebihi lebar carousel */
+    height: auto; /* Sesuaikan tinggi gambar secara proporsional */
+}
+.carousel #bmw{
+    max-width: 450px;
+    margin: auto;
+}
+
+.carousel .carousel-caption{
+    border-radius: 10px;
+    background-color: rgba(100, 100, 100, 0.484);
+    font-family: 'Poppins', sans-serif;
+    color: black ;
+    width: 300px;
+    height: 60px;
+    margin-left: 60px;
+    overflow-y: hidden;
+}
+.carousel .carousel-caption a{
+    color: black;
+}
+.types h1,h5,h6{
+    overflow-y: hidden;
+    color: white;
+}
+.contact h1{
+    color: white;
+    overflow-y: hidden;
+}
+
+#tombol {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
