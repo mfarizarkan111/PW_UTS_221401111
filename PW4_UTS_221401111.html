@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OTOMOBILE</title>
+
+    <!-- icon -->
+    <link rel="icon" href="img/icon.png" type="image/png">
+
+    <!-- Font yang digunakan untuk membuat tulisan OTOMOBILE yakni font lighsiderital -->
+    <!-- dan font yang digunakan untuk keseluruhan konten merupakan poppins -->
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@100;300;400;500;600;700&family=Telex&display=swap"
+        rel="stylesheet">
+    <!-- fonts end -->
+
+
+    <!-- BOOTSRAP START -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- BOOTSRAP HALT -->
+
+
+    <!-- JavaScript START -->
+    <script src="script.js"></script>
+    <!-- JavaScript HALT -->
+
+
+    <!-- CSS START -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS HALT -->
+
+</head>
+
+<body>
+
+    <!-- NAVBAR START -->
+    <!-- Pada section ini saya menggunakan template bootstrap berupa navbar navbar-expand -->
+    <!-- dengan menambahkan logo disamping tulisan otomobile -->
+    <!-- section navbar dipisahkan menggunakan css berupa space between -->
+    <!-- dan juga ada beberapa hover pada saat mouse diatas tombol navbar -->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <div class="brand">
+
+                <a class="navbar-brand" href="#balik"><img id="logo" src="img/logo.png" alt="OTOMOBILE_logo"></a>
+                <a class="navbar-brand" href="#balik">OTOMOBILE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse ml-auto" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#carousel-brand">Brands</a>
+                        <a class="nav-link" href="#types">Types</a>
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR HALT -->
+
+
+    <!-- HERO/JUMBOTRON -->
+    <!-- pada section jumbotron daya menggunakan background yang berupa media yang didapat dari internet -->
+    <section class="main" id="balik">
+        <div class="container py-5">
+            <div class="row py-4">
+                <div class="col-lg-7 pt-5 text-center">
+                    <h1>Drive Your Dreams</h1>
+                    <a href="#home"><button class="main_btn">Get Started</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HERO/JUMBOTRON HALT -->
+
+
+    <!-- OTOMOBILE -->
+    <!-- sectioj ini berisi tentang website ini -->
+    <div class="container-about" id="home">
+        <div class="row">
+            <div class="col-md-6 my-4">
+                <img src="img/about.jpg" class="img-fluid img-about" alt="Gambar">
+            </div>
+            <div class="col-md-6 text-center pt-5 mt-5 mr-4">
+                <p>
+                    Selamat datang di tempat di mana impian kendaraan sempurna Anda menjadi kenyataan. Temukan keindahan
+                    berkendara dalam keunggulan brand, kualitas tak tertandingi, dan kemitraan terpercaya, hanya di
+                    <span id="about-span">OTOMOBILE</span> Mengubah Setiap Perjalanan Menjadi Petualangan.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- OTOMOBILE HALT -->
+
+
+    <!-- BRANDS CAROUSEL -->
+    <!-- pada section ini saya menggunakan template bootstrap carouse, yang mana membuat beberapa elemen dapat berubah sesuao dengan tombol panah yang ditekan  -->
+
+    <div id="carousel-brand" class="carousel slide">
+        <div class="carousel-indicators">
+            <!-- section ini merupakan inisialisasi conten carousel -->
+            <button type="button" data-bs-target="#carousel-brand" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel-brand" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel-brand" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active"> <!-- pada section ini merupakan deklarasi pengaktifan carousel-->
+                <img src="img/pngwing 7.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <a target="_blank" href="https://www.ferrari.com/en-ID">
+                        <h5 class="overflow-hidden">Ferrari</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/Mask group.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <a target="_blank" href="https://www.lamborghini.com/en-en">
+                        <h5 class="overflow-hidden">Lamborghini</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img id="bmw" src="img/pngwing 6.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <a target="_blank" href="https://www.bmw.com/en/index.html">
+                        <h5 class="overflow-hidden">BMW</h5>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-brand" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-brand" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- BRANDS CAROUSEL END -->
+
+
+    <!-- TYPES START -->
+    <!-- pada section ini saya menggunakan template card bootstrap untuk menyajikan tipe tipe mobil yang disediakan -->
+    <!-- dengan menggunakan class card dan dimodifikasi sesuai dengan tema website -->
+    <section class="types py-5" id="types">
+        <div class="row">
+            <div class="col judul text-center">
+                <h1>
+                    TIPE MOBIL
+                </h1>
+                <h6>
+                    Pilih sesuai dengan selera anda
+                </h6>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">
+                <div class="card" style="width: 22rem;">
+                    <img src="img/Super.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Super Car</h5>
+                        <p class="card-text">Kunjungi web berikut untuk informasi lebih lanjut.</p>
+                        <a href="#" class="btn btn-dark">Kunjungi</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 22rem;">
+                    <img src="img/truck.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Truck</h5>
+                        <p class="card-text">Kunjungi web berikut untuk informasi lebih lanjut.</p>
+                        <a href="#" class="btn btn-dark">Kunjungi</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 22rem;">
+                    <img src="img/Klasik.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Klasik</h5>
+                        <p class="card-text">Kunjungi web berikut untuk informasi lebih lanjut.</p>
+                        <a href="#" class="btn btn-dark">Kunjungi</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 22rem;">
+                    <img src="img/Sedan.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sedan</h5>
+                        <p class="card-text">Kunjungi web berikut untuk informasi lebih lanjut.</p>
+                        <a href="#" class="btn btn-dark">Kunjungi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TYPES HALT -->
+
+
+    <!-- CONTAC Section -->
+    <!-- Pada section ini saya menggunakan template modals, yang merupakan menu popup kontak, dimana ketika user menekan tombol hububngi kami maka akan muncul sebuah formulir berupa email dan pesan yang ingin disampaikan user kepada developer -->
+    <section class="contact py-5" id="contact">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">
+                    Tunggu Apalagi? Hubungi kami.
+                </h1>
+
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col">
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Hubungi Kami </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Kirim Pesan</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Tutup"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Email:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Pesan:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Kirim Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTAC Section END -->
+
+
+    <!-- scroll start -->
+    <!-- Inisialisasi tombol scroll -->
+    <button id="tombol">⬆️</button>
+    <!-- scroll Halt -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
